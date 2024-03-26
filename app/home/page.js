@@ -2,6 +2,7 @@
 
 import Hero from "@/components/home/hero";
 import SectionTitle from "@/components/home/sectionTitle";
+import Caroussel from "@/components/wall/caroussel";
 import Image from "next/image";
 import React from "react";
 import {
@@ -49,11 +50,14 @@ export default function CV() {
       </div>
       <Hero />
       <SectionTitle
-        id="skills"
+        id = "wall"
         pretitle="Why IDeA?"
         title="Why should you contact us">
         We are a team of students who learned how to code, and we want to help you create your project.
       </SectionTitle>
+
+      <Caroussel/>
+
       <div className="container mx-auto p-8 xl:px-0 mb-20 flex flex-wrap lg:flex-nowrap lg:gap-10 ">
         <div
           className={`flex w-full items-center justify-center lg:w-1/2`}>
@@ -68,11 +72,12 @@ export default function CV() {
             />
           </div>
         </div>
+
         <div
           className={`flex w-full flex-wrap items-center lg:w-1/2`}>
           <div>
             <div className="mt-4 flex w-full flex-col">
-              <h3 className="mt-3 max-w-2xl text-3xl font-bold leading-snug tracking-tight text-gray-800 dark:text-white lg:text-4xl lg:leading-tight">
+              <h3 id="skills" className="mt-3 max-w-2xl text-3xl font-bold leading-snug tracking-tight text-gray-800 dark:text-white lg:text-4xl lg:leading-tight">
                 Lots of skills
               </h3>
               <p className="max-w-2xl py-4 text-lg leading-normal text-gray-500 dark:text-gray-300 lg:text-xl xl:text-xl">

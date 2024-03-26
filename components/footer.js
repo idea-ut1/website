@@ -6,6 +6,7 @@ import idea from "@/public/image/idea-logo.png";
 export default function Footer() {
   const navigation = [
     {key: "Home", link: "#home"},
+    {key: "Wall of fame", link: "#wall"},
     {key: "Skills", link: "#skills"},
     {key: "Projects", link: "#projects"},
     {key: "FAQ", link: "#faq"},
